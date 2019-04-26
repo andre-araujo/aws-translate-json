@@ -1,0 +1,14 @@
+{
+  "name": "translate-object-values",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "andre-araujo <andreluis9214@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.443.0"
+  }
+}
