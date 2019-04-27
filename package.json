@@ -1,13 +1,21 @@
 {
   "name": "aws-translate-json",
   "version": "0.0.2",
-  "description": "",
+  "description": "Translate object values into other languages using the AWS translate API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/andre-araujo/aws-translate-json"
   },
+  "keywords": [
+    "AWS",
+    "amazon",
+    "translate",
+    "translation",
+    "AWS.Translate",
+    "object"
+  ],
   "scripts": {
     "build": "npm run prettier && tsc",
     "dev": "run-p watch:*",
