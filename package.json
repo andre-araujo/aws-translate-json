@@ -1,14 +1,31 @@
 {
-  "name": "translate-object-values",
+  "name": "aws-translate-json",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andre-araujo/aws-translate-json"
+  },
   "scripts": {
-    "start": "node ."
+    "build": "npm run prettier && tsc",
+    "dev": "run-p watch:*",
+    "prettier": "prettier --write src/*.ts",
+    "watch:build": "tsc-watch",
+    "watch:prettier": "onchange \"src/*\" -- prettier --write {{changed}}"
   },
   "author": "andre-araujo <andreluis9214@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.443.0"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.7",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^5.2.0",
+    "prettier": "^1.17.0",
+    "tsc-watch": "^2.1.2",
+    "typescript": "^3.4.5"
   }
 }
