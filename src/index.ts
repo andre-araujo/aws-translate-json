@@ -1,7 +1,7 @@
 import AWS from "aws-sdk";
 import { ConfigurationOptions } from "aws-sdk/lib/config";
 
-class AWSTranslateJSON {
+export class AWSTranslateJSON {
   translate: AWS.Translate;
   sourceLang: string;
   tagetLangs: Array<string>;
@@ -82,5 +82,3 @@ class AWSTranslateJSON {
       });
     });
 }
-
-export default AWSTranslateJSON;

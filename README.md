@@ -25,7 +25,7 @@ Translate object values into other languages using the AWS translate API
 ### Usage example:
 
 ```javascript
-const AWSTranslateJSON = require('aws-translate-json');
+const { AWSTranslateJSON } = require('aws-translate-json');
 
 const awsConfig = {
     accessKeyId: process.env.AWS_TRANSLATE_ID,
